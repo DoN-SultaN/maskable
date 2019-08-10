@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "file-drop-element": "./file-drop-element.js",
+    "htm": "./htm.js",
+    "preact": "./preact.js"
+  }
+}

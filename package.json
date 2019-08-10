@@ -1,11 +1,18 @@
 {
     "name": "maskable",
     "scripts": {
+        "prepare": "pika install",
         "format": "prettier \"src/*.js\" \"*.{html,css,md}\" \"workbox-config.js\" --write",
         "build": "workbox generateSW workbox-config.js"
     },
+    "dependencies": {
+        "file-drop-element": "^0.2.0",
+        "htm": "^2.2.1",
+        "preact": "^8.5.1",
+        "react-color": "^2.17.3"
+    },
     "devDependencies": {
-        "file-drop-element": "0.2.0",
+        "@pika/web": "^0.5.1",
         "prettier": "^1.18.2",
         "workbox-cli": "^4.3.1"
     },

@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "moduleResolution": "node",
+
+    "noEmit": true,
+    "rootDir": "./src",
+    "allowJs": true,
+
+    "jsx": "react",
+    "jsxFactory": "h",
+
+    "baseUrl": ".",
+    "paths": {
+      "/web_modules/*.js": [
+        "node_modules/*",
+        "web_modules/*.js",
+      ]
+    },
+  }
+}

@@ -48,7 +48,7 @@ function updateSource(link) {
 
 /** @type {HTMLInputElement} */
 const fileInput = document.querySelector('#icon_file');
-/** @type {import('file-drop-element').FileDropElement} */
+/** @type {import('/web_modules/file-drop-element.js').FileDropElement} */
 const fileDrop = document.querySelector('#icon_drop');
 
 fileInput.addEventListener('change', () =>
@@ -71,7 +71,7 @@ updateDisplayedIcon(demoUrl);
 const demoLinks = document.querySelector('.demo__list');
 demoLinks.addEventListener('click', evt => {
     const target = /** @type {HTMLElement} */ (evt.target);
-    const link = target.closest('.demo__link');
+    const link = /** @type {HTMLAnchorElement} */ (target.closest('.demo__link'));
     if (link != null) {
         evt.preventDefault();
         const demoUrl = new URL(link.href).searchParams.get('demo');
